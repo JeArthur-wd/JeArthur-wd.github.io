@@ -1,0 +1,7 @@
+name = "arthur-twin"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+ALLOWED_ORIGINS = "https://jearthur-wd.github.io,http://localhost:3003,http://localhost:3000"
+# OPENROUTER_API_KEY is a secret: `npx wrangler secret put OPENROUTER_API_KEY`

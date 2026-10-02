@@ -1,0 +1,38 @@
+{
+  "name": "arthur-jemba-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "worker": "wrangler dev -c worker/wrangler.toml",
+    "deploy:worker": "wrangler deploy -c worker/wrangler.toml",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@assistant-ui/react": "^0.15.23",
+    "@assistant-ui/react-markdown": "^0.14.18",
+    "@radix-ui/react-avatar": "^1.2.6",
+    "@radix-ui/react-slot": "^1.3.3",
+    "@radix-ui/react-tooltip": "^1.2.16",
+    "@tailwindcss/postcss": "^4.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cn": "^0.4.0",
+    "lucide-react": "^1.50.0",
+    "next": "^15.5.0",
+    "postcss": "^8.5.28",
+    "radix-ui": "^1.6.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.3",
+    "tw-animate-css": "^1.4.0",
+    "tw-shimmer": "^0.4.13",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "wrangler": "^4.147.0"
+  }
+}
