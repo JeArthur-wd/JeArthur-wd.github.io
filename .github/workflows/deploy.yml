@@ -26,7 +26,6 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          BASE_PATH: /arthurjemba_portfolio-
           NEXT_PUBLIC_CHAT_API_URL: ${{ vars.NEXT_PUBLIC_CHAT_API_URL || 'https://arthur-twin.jemba.workers.dev' }}
       - uses: actions/upload-pages-artifact@v3
         with:

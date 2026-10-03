@@ -1,4 +1,4 @@
-// Project pages live under /<repo-name>; the workflow sets BASE_PATH, local dev leaves it empty.
+// Served from the root of jearthur-wd.github.io; set BASE_PATH only if hosted under a sub-path.
 const basePath = process.env.BASE_PATH || "";
 
 /** @type {import('next').NextConfig} */
