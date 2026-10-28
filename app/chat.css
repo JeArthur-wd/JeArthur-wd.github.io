@@ -50,24 +50,24 @@
 
 .aui-scope {
   --radius: 0.9rem;
-  --background: #0c0e12;
-  --foreground: #e9ecf1;
-  --card: #0c0e12;
-  --card-foreground: #e9ecf1;
-  --popover: #12151b;
-  --popover-foreground: #e9ecf1;
-  --primary: #c6ff3d;
-  --primary-foreground: #0a0f00;
-  --secondary: #171a21;
-  --secondary-foreground: #e9ecf1;
-  --muted: #171a21;
-  --muted-foreground: #8b93a1;
-  --accent: #1c2027;
-  --accent-foreground: #e9ecf1;
-  --destructive: #ff5a5a;
-  --border: #262a33;
-  --input: #262a33;
-  --ring: #c6ff3d;
+  --background: #fffdf9;
+  --foreground: #1d2124;
+  --card: #fffdf9;
+  --card-foreground: #1d2124;
+  --popover: #fffdf9;
+  --popover-foreground: #1d2124;
+  --primary: #2f5d50;
+  --primary-foreground: #ffffff;
+  --secondary: #efe9de;
+  --secondary-foreground: #1d2124;
+  --muted: #efe9de;
+  --muted-foreground: #565c62;
+  --accent: #efe9de;
+  --accent-foreground: #1d2124;
+  --destructive: #b42318;
+  --border: #e2dacb;
+  --input: #e2dacb;
+  --ring: #2f5d50;
 }
 
 @custom-variant data-open (&:where([data-state="open"], [data-open]:not([data-open="false"])));

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-// Scroll-reveal, cursor spotlight, nav state and scroll progress. Rendered once.
+// Scroll-reveal, nav state and scroll progress. Rendered once.
 export default function Effects() {
   useEffect(() => {
     const root = document.documentElement;
@@ -19,11 +19,6 @@ export default function Effects() {
     );
     document.querySelectorAll("[data-reveal]").forEach((el) => io.observe(el));
 
-    const onMove = (e) => {
-      root.style.setProperty("--mx", `${e.clientX}px`);
-      root.style.setProperty("--my", `${e.clientY}px`);
-    };
-    window.addEventListener("pointermove", onMove, { passive: true });
 
     const nav = document.querySelector(".nav");
     const bar = document.querySelector(".progress");
@@ -38,7 +33,6 @@ export default function Effects() {
 
     return () => {
       io.disconnect();
-      window.removeEventListener("pointermove", onMove);
       window.removeEventListener("scroll", onScroll);
     };
   }, []);

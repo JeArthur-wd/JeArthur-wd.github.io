@@ -69,7 +69,7 @@ export default function TwinChat() {
     <div className="aui-scope">
       <TooltipProvider>
         <div
-          className={`fixed bottom-24 right-4 z-[110] h-[min(640px,calc(100svh-7.5rem))] w-[min(420px,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-border bg-background text-foreground shadow-2xl shadow-black/60 transition-all duration-200 sm:right-6 ${
+          className={`fixed bottom-24 right-4 z-[110] h-[min(640px,calc(100svh-7.5rem))] w-[min(420px,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-border bg-background text-foreground shadow-2xl shadow-black/15 transition-all duration-200 sm:right-6 ${
             open ? "translate-y-0 opacity-100" : "pointer-events-none invisible translate-y-3 opacity-0"
           }`}
           role="dialog"

@@ -8,3 +8,5 @@ out
 
 # resume PDF (personal details)
 *.pdf
+!public/Arthur-Jemba-Resume.pdf
+.next-check/

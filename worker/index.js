@@ -58,9 +58,11 @@ export default {
           stream: false,
           max_tokens: 1000,
           temperature: 0.4,
+          // Skip hidden reasoning: much faster, and some models return nothing without this.
+          reasoning: { enabled: false },
           messages: [{ role: "system", content: SYSTEM_PROMPT }, ...messages],
         }),
-        signal: AbortSignal.timeout(25000),
+        signal: AbortSignal.timeout(12000),
       }).catch(() => null);
 
       if (!upstream || !upstream.ok) {
